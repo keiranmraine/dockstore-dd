@@ -10,7 +10,7 @@ cwlVersion: v1.0
 
 requirements:
   - class: DockerRequirement
-    dockerPull: "quay.io/keiranmraine/dockstore-dd:0.0.0"
+    dockerPull: "quay.io/keiranmraine/dockstore-dd:1.0.0"
 
 inputs:
   count:
