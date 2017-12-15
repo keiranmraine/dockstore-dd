@@ -1,0 +1,7 @@
+{
+  "count": 10,
+  "null_file": {
+    "path": "/tmp/null.dat",
+    "class": "File"
+  }
+}

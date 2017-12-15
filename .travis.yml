@@ -1,0 +1,15 @@
+notifications:
+  email: false
+  slack:
+    secure: Upg9KHheYzA+Ir2MNj1T15bi9gy5+/ZM9RqwKfNll5TiZn7HEtHRVPSVq7hnbo4Pk3hZqE9bUF9baYY2YI/+NZvt72p5P2mTvwQfWgqirq6t+jEI7/LMNYezWpQoFt26u9Cr0QiK7NYH1fTYJdDIs9iPR0ZM8QIOTesxf1t4yWfocYEK8KD3cHXuwaOJGOUE264m9M6zpW5e7TkvIS2qYEdJhuc7XZxrH8OwVXfTBkspVA7QvrATMzGs0LvarYBF8pevMk72BWsgsnSnvFoSQgNpoH3rpJ/o0FSPBpFD2FqNZcNgRJdXAy1g2ZhBI83A7yy1hzcx7GqHwkwlw5vEkJH4FC2wwUUslM7FvYu5NPCNER0ypciFRAqrji99+zpZOtSz3J+UTDTqDgJ9Jtw58NKCn098VnpHv1857vppIUbLiSAFahzZIbLLOPlPohKgD2Vp64f7MeON87DAcB5tF2eBXKACa5lAKv0z2TPB4eaD9FBVXWDpsEmJl0btfy0DVOuy4MXLzrwDSJJ6vlMzg7RNGBJDq5ZruwJHpXA77YlJ5+KxOYCHb3UvRLiid9yqffMZi0Aw9Z7BIaROC1+ow51bl7N8C1lmcdHfZJd/b5M2mf5C9J41EGzugbP2fMPheGjDLOr//VGreih0GLNf5OX5mTKB7JAdUTIf4FVCTJk=
+
+sudo: false
+
+services:
+  - docker
+
+install:
+ - docker build -t dockstore-dd .
+
+script:
+ - docker images | grep -c dockstore-dd
