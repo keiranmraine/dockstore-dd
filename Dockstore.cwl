@@ -28,8 +28,7 @@ outputs:
     outputBinding:
       glob: null.dat
 
-
-baseCommand: ["dd" "if=/dev/zero" "of=null.dat" "bs=1M"]
+baseCommand: ["dd", "if=/dev/zero", "of=null.dat", "bs=1M"]
 
 doc: |
     ![build_status](https://quay.io/repository/keiranmraine/dockstore-dd/status)
