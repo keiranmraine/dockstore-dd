@@ -2,7 +2,6 @@
 
 dockstore testing tool to generate file of size X with input from /dev/zero
 
-
 ## Development environment
 
 This project uses git pre-commit hooks.  As these will execute on your system you
